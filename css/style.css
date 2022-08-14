@@ -652,6 +652,136 @@ html, body{
     margin-right: 15px;
 }
 
+/* TESTIMONIAL */
+.testimonial{
+    text-align: center;
+    background-image: url(../img/bg17.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 115px;
+}
+
+.testimonial .title p{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #f55f8d;
+}
+
+.testimonial .title h2{
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.testimonial .main{
+    min-height: 300px;
+}
+
+.testimonial .main .thumbnail{
+    width: 300px;
+    margin: auto;
+    box-sizing: border-box;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial .main .thumbnail::before{
+    left: 0;
+    background: linear-gradient(to right, #fff 0, rgba(255,255,255,0) 100%);
+}
+
+.testimonial .main .thumbnail::after, .testimonial .main .thumbnail::before{
+    content: "";
+    width: 30px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+.testimonial .main .thumbnail .swiper-slide .picture{
+    padding: 30px 0 0;
+    transition: all 0.5s;
+}
+
+.testimonial .main .thumbnail .swiper-slide .picture::before{
+    height: 15px;
+    width: 15px;
+    bottom: 30px;
+}
+
+.testimonial .main .thumbnail .swiper-slide .picture::after, .testimonial .main .thumbnail .swiper-slide .picture::before{
+    content: "";
+    background-color: #f55f8d;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.testimonial .main .thumbnail .swiper-slide .picture img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+    background-color: #f55f8d;
+}
+
+.testimonial .main .comment{
+    min-height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial .main .comment .text{
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 770px;
+    position: relative;
+}
+
+.testimonial .main .comment .text i{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 70px;
+    color: #f55f8d;
+}
+
+.testimonial .main .comment .text h3{
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.testimonial .main .comment .text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0 15px 15px;
+}
+
+.testimonial .main .comment .text .position{
+    color: #f55f8d;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 0;
+}
+
 /* BLOG */
 .blog{
     background-image: url(../img/bg16.png);
@@ -674,6 +804,70 @@ html, body{
     font-weight: 800;
     color: #262626;
     margin-bottom: 20px;
+}
+
+.blog .main .blog-item{
+    text-align: left;
+    background: rgba(245,95,141,0.1);
+    border-radius: 8px;
+}
+
+.blog .main .blog-item .blog-header{
+    position: relative;
+}
+
+.blog .main .blog-item .blog-header img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.blog .main .blog-item .blog-header p{
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+}
+
+.blog .main .blog-item .blog-body{
+    padding: 30px 15px 20px 15px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.blog .main .blog-item .blog-body h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.blog .main .blog-item .blog-footer{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.blog .main .blog-item .blog-footer p:first-of-type{
+    margin-right: 20px;
+}
+
+.blog .main .blog-item .blog-footer i{
+    font-size: 22px;
+    color: #f55f8d;
+    vertical-align: sub;
+}
+
+.blog .main .blog-item .blog-footer p:first-of-type span{
+    color: #f55f8d;
 }
 
 /* FOOTER */
