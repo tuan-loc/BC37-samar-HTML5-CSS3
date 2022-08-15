@@ -1076,6 +1076,76 @@ html, body{
     background-color: #f55f8d;
 }
 
+/* RESPONSIVE */
+/* Desktop */
+@media screen and (max-width: 1200px){
+    .carousel .carousel-content .carousel-right .carousel-banner{
+        width: 420px;
+        margin-left: 15px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 992px){
+    .number .row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .number .row .col {
+        width: 50%;
+    }
+    .features .row {
+        display: block;
+    }
+    .features .row .col {
+        width: 100%;
+    }
+}
+
+/* Phone (ngang) */
+@media screen and (max-width: 768px){
+    .carousel .carousel-content {
+        display: block;
+    }
+    .services .main .row {
+        display: block;
+        margin: 30px 0;
+    }
+    .plan .main .container {
+        display: block;
+        margin: 30px 0;
+    }
+    .footer .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .main .item {
+        width: 50%;
+        margin: 15px 0;
+    }
+    .footer .subcribe{
+        display: block;
+    }
+    .footer .subcribe .text, .footer .subcribe .form{
+        width: 100%;
+    }
+}
+/* Phone (dọc) */
+@media screen and (max-width: 576px){
+    .about-us .row {
+        display: block;
+    }
+    .about-us .row .col-left, .about-us .row .col-right  {
+        width: 100%;
+    }
+    .footer .main .item {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+
 /* ANIMATION */
 @keyframes upToDown{
     49%{
